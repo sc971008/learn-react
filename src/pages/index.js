@@ -2,13 +2,13 @@
 // import Image from 'next/image'
 // import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
-import Profile from './qcomps/profile_mistake'
-import TodoList from './qcomps/todos'
+import PackingList from './components/props_item'
+import Holder from './components/square'
 
 export default function Home() {
   return (
     <div className={styles.main}>
-        <TodoList />
+        <Holder />
     </div>
   )
 }
