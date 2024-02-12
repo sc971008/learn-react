@@ -2,13 +2,12 @@
 // import Image from 'next/image'
 // import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
-import PackingList from './components/props_item'
-import Holder from './components/square'
+import PackingList from './qcomps/props_item'
 
 export default function Home() {
   return (
     <div className={styles.main}>
-        <Holder />
+        <PackingList />
     </div>
   )
 }
