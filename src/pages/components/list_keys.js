@@ -7,8 +7,8 @@ const people = [
 ];
 
 export default function List() {
-  const listItems = people.map((person, index) =>
-    <li key={index}>{person}</li>
+  const listItems = people.map((person) =>
+    <li key={people}>{person}</li>
   );
   return <ul>{listItems}</ul>;
 }

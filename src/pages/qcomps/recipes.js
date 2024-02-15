@@ -13,10 +13,22 @@ export const recipes = [{
 }];
 
 export default function RecipeList() {
+  const listItems = recipes.map((recipe) => (
+    <div key={recipe.id}>
+      <h2>{recipe.name}</h2>
+      <ul>
+        {Array.from(recipe.ingredients).map((ingredient, index) => (
+          <li key={index}>
+            {ingredient}
+          </li>
+        ))}
+      </ul>
+    </div>
+  ));
   return (
     <div>
       <h1>Recipes</h1>
-      {}
+      {listItems}
     </div>
   );
 }
