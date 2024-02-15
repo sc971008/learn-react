@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 export default function Form() {
   const [firstName,setFirstName] = useState('')
-  const [LastName,setLastName] = useState('')
+  const [lastName,setLastName] = useState('')
 
 
   function handleFirstNameChange(e) {

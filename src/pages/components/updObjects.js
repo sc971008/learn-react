@@ -6,7 +6,7 @@ export default function Form() {
                                 artwork: {
                                   title: 'Blue Nana',
                                   city: 'Hamburg',
-                                  image: 'https://i.imgur.com/Sd1AgUOm.jpg',
+                                  image: 'http://i.imgur.com/Sd1AgUOm.jpg',
                                 }
                               });
 
@@ -31,6 +31,7 @@ export default function Form() {
         {person.artwork.title}{' '}
         ({person.artwork.city})
       </p>
+      <img src={person.image} alt={"Render error"}/>
     </>
   );
 }
