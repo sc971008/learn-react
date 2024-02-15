@@ -32,7 +32,6 @@ export default function Form() {
         {person.artwork.title}{' '}
         ({person.artwork.city})
       </p>
-      <img src={person.image} alt={"Render error"}/>
     </>
   );
 }
